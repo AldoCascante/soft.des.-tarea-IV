@@ -41,9 +41,9 @@ class Barista(Worker_Interface):
         self.next = next_worker
 
     def handle(self, item):
-        if item.get_type() == "Reposteria":
-            pastry = item.get_name()
-            message = "[Barista]: Preparo alimento: " + pastry + "."
+        if item.get_type() == "Bebida":
+            drink = item.get_name()
+            message = "[Barista]: Preparo Bebida: " + drink + "."
             print(message)
         else:
             self.next.handle(item)

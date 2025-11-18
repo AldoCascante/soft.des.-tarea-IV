@@ -6,6 +6,10 @@ class Order_Interface(ABC):
         pass
 
     @abstractmethod
+    def get_type(self):
+        pass
+
+    @abstractmethod
     def get_name(self):
         pass
 
